@@ -1,0 +1,64 @@
+/* widget.css */
+
+/* Main container */
+.widget-container {
+    max-width: 100%;
+    margin: auto;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    text-align: center;
+  }
+  
+  /* Grid container for smaller news items */
+  .news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+
+  /* Individual news item */
+  .news-item {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+  }
+  .news-item a{
+    text-decoration:none;
+  }
+  /* Image inside news item */
+  .news-image {
+    width: 300px;
+    height: 200px;
+    border-radius: 8px;
+  }
+  
+  /* Content inside news item */
+  .news-content {
+    flex: 1;
+    position: relative;
+  }
+
+.center-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+.logo-container {
+  position: absolute;
+  top: 20px; /* Adjust as needed */
+  left: 20px; /* Adjust as needed */
+}
+
+.logo-container img{
+    border-radius: 200px;
+}
+.footer{
+    text-align: right;
+}
+
+ 

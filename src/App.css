@@ -27,6 +27,17 @@
 .App-link {
   color: #61dafb;
 }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust the minmax width as needed */
+  gap: 20px;
+  justify-items: stretch; /* Ensures items fill the row before wrapping */
+}
+
+.grid-item {
+  /* Your grid item styles */
+}
+
 
 @keyframes App-logo-spin {
   from {
